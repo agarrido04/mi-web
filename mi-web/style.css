@@ -1,5 +1,4 @@
 
-/* Colores principales */
 :root {
     --fondo: #080014;
     --superficie: #1b1030;
@@ -7,7 +6,6 @@
     --azul: #b56cff;
 }
 
-/* Estilos generales */
 * {
     box-sizing: border-box;
 }
@@ -20,7 +18,6 @@ body {
     line-height: 1.6;
 }
 
-/* Cabecera */
 header {
     background-color: var(--superficie);
     text-align: center;
@@ -39,7 +36,6 @@ button {
     cursor: pointer;
 }
 
-/* Contenido principal */
 main {
     max-width: 900px;
     margin: 0 auto;
@@ -56,18 +52,28 @@ h2 {
     color: var(--azul);
 }
 
-/* Cuadrícula de proyectos */
-.proyectos {
+h3 {
+    color: var(--azul);
+}
+
+.proyectos,
+.habilidades {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-.proyecto {
+.proyecto,
+.habilidades p,
+.experiencia,
+.formacion {
     background-color: var(--fondo);
     padding: 20px;
     border: 1px solid var(--azul);
     border-radius: 8px;
+}
+
+.proyecto {
     transition: transform 0.2s;
 }
 
@@ -75,8 +81,9 @@ h2 {
     transform: translateY(-4px);
 }
 
-.proyecto h3 {
-    color: var(--azul);
+.proyecto h3,
+.experiencia h3,
+.formacion h3 {
     margin-top: 0;
 }
 
@@ -84,7 +91,15 @@ h2 {
     font-size: 0.9em;
 }
 
-/* Cuadrícula de aficiones */
+.habilidades p {
+    margin: 0;
+}
+
+.experiencia,
+.formacion {
+    margin-bottom: 15px;
+}
+
 .gustos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -97,7 +112,6 @@ h2 {
     margin: 0;
 }
 
-/* Fotografía */
 .foto-perfil {
     display: block;
     width: 180px;
@@ -108,7 +122,6 @@ h2 {
     margin: 15px 0 20px;
 }
 
-/* Degradado en la presentación */
 .frase-presentacion {
     background: linear-gradient(90deg, var(--azul), #8bc5ff);
     background-clip: text;
@@ -116,7 +129,6 @@ h2 {
     color: transparent;
 }
 
-/* Menú de navegación */
 nav {
     max-width: 900px;
     margin: 0 auto;
@@ -137,14 +149,12 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Pie de página */
 footer {
     background-color: var(--superficie);
     text-align: center;
     padding: 20px;
 }
 
-/* Modo claro */
 body.modo-claro {
     --fondo: #f2f2f2;
     --superficie: #ffffff;
@@ -153,14 +163,17 @@ body.modo-claro {
 }
 
 body.modo-claro .gustos p,
-body.modo-claro .proyecto {
+body.modo-claro .proyecto,
+body.modo-claro .habilidades p,
+body.modo-claro .experiencia,
+body.modo-claro .formacion {
     background-color: #e7e7e7;
 }
 
-/* Adaptación a móviles */
 @media (max-width: 600px) {
     .gustos,
-    .proyectos {
+    .proyectos,
+    .habilidades {
         grid-template-columns: 1fr;
     }
 
