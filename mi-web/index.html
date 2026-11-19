@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,29 +9,56 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Cabecera con nombre y frase -->
     <header>
         <h1>Alejandro Garrido</h1>
         <p class="frase-presentacion">Estudiante de 1º DAM interesado en la tecnología y la programación.</p>
         <button id="theme-button" type="button">Cambiar modo</button>
     </header>
 
-    <!-- Menú de navegación a las secciones de la página -->
     <nav aria-label="Navegación principal">
         <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
         <a href="#lo-que-he-hecho">Lo que he hecho</a>
         <a href="#me-gusta">Me gusta</a>
     </nav>
 
     <main>
-        <!-- Sección Sobre mí -->
         <section id="sobre-mi">
             <h2>Sobre mí</h2>
             <img class="foto-perfil" src="foto-alejandro.png" alt="Fotografía de Alejandro Garrido">
             <p>Soy estudiante de Desarrollo de Aplicaciones Multiplataforma en el IES Dr. Lluís Simarro. Anteriormente completé el ciclo de Sistemas Microinformáticos y Redes. Me gusta aprender mediante la práctica y desarrollar proyectos para mejorar mis conocimientos.</p>
         </section>
 
-        <!-- Sección Lo que he hecho -->
+        <section id="proyectos">
+            <h2>Mis proyectos</h2>
+
+            <div class="proyectos">
+                <article class="proyecto">
+                    <h3>Gym Local Page (GLP)</h3>
+                    <p>Desarrollo de una página web relacionada con el sector del fitness, utilizando HTML y CSS. Proyecto gestionado mediante Git y GitHub, con despliegue mediante GitHub Actions y Vercel.</p>
+                    <p><strong>Tecnologías:</strong> HTML, CSS, Git, GitHub y Vercel.</p>
+                </article>
+
+                <article class="proyecto">
+                    <h3>Football Manager</h3>
+                    <p>Desarrollo de una aplicación web para gestionar información relacionada con equipos de fútbol. Utilización de JavaScript, AJAX y MockAPI para trabajar con datos y actualizar información.</p>
+                    <p><strong>Tecnologías:</strong> HTML, CSS, JavaScript, AJAX y MockAPI.</p>
+                </article>
+
+                <article class="proyecto">
+                    <h3>Desarrollo web con PHP y MySQL</h3>
+                    <p>Realización de ejercicios y aplicaciones web utilizando PHP para gestionar la lógica del servidor y MySQL para almacenar y consultar información.</p>
+                    <p><strong>Tecnologías:</strong> PHP, MySQL y HTML.</p>
+                </article>
+
+                <article class="proyecto">
+                    <h3>Administración de sistemas y virtualización</h3>
+                    <p>Prácticas de administración de sistemas mediante Docker y Windows Server, trabajando con servicios de red, máquinas Windows y Active Directory.</p>
+                    <p><strong>Tecnologías:</strong> Docker, Windows Server y Active Directory.</p>
+                </article>
+            </div>
+        </section>
+
         <section id="lo-que-he-hecho">
             <h2>Lo que he hecho</h2>
             <ul>
@@ -42,7 +70,6 @@
             </ul>
         </section>
 
-        <!-- Sección Me gusta -->
         <section id="me-gusta">
             <h2>Me gusta</h2>
             <div class="gustos">
@@ -53,7 +80,6 @@
         </section>
     </main>
 
-    <!-- Pie de página con contacto -->
     <footer>
         <p>Contacto: <a href="mailto:alegarrei@alu.edu.gva.es">alegarrei@alu.edu.gva.es</a></p>
         <p>© Alejandro Garrido</p>

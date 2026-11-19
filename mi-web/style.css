@@ -1,3 +1,4 @@
+
 /* Colores principales */
 :root {
     --fondo: #080014;
@@ -5,6 +6,7 @@
     --texto: #ffffff;
     --azul: #b56cff;
 }
+
 /* Estilos generales */
 * {
     box-sizing: border-box;
@@ -18,7 +20,7 @@ body {
     line-height: 1.6;
 }
 
-/* Cabecera con fondo y texto legible */
+/* Cabecera */
 header {
     background-color: var(--superficie);
     text-align: center;
@@ -37,7 +39,7 @@ button {
     cursor: pointer;
 }
 
-/* Contenido centrado con ancho máximo de 900px */
+/* Contenido principal */
 main {
     max-width: 900px;
     margin: 0 auto;
@@ -54,7 +56,35 @@ h2 {
     color: var(--azul);
 }
 
-/* Cuadrícula de dos columnas para Me gusta */
+/* Cuadrícula de proyectos */
+.proyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.proyecto {
+    background-color: var(--fondo);
+    padding: 20px;
+    border: 1px solid var(--azul);
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.proyecto:hover {
+    transform: translateY(-4px);
+}
+
+.proyecto h3 {
+    color: var(--azul);
+    margin-top: 0;
+}
+
+.proyecto p:last-child {
+    font-size: 0.9em;
+}
+
+/* Cuadrícula de aficiones */
 .gustos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -67,34 +97,7 @@ h2 {
     margin: 0;
 }
 
-/* Pie de página */
-footer {
-    background-color: var(--superficie);
-    text-align: center;
-    padding: 20px;
-}
-
-/* La cuadrícula pasa a una columna en móvil */
-@media (max-width: 600px) {
-    .gustos {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Estilos para el modo claro */
-body.modo-claro {
-    --fondo: #f2f2f2;
-    --superficie: #ffffff;
-    --texto: #202020;
-    --azul: #1769aa;
-}
-
-body.modo-claro .gustos p {
-    background-color: #e7e7e7;
-}
-
-
-/* Fotografía de la sección Sobre mí */
+/* Fotografía */
 .foto-perfil {
     display: block;
     width: 180px;
@@ -105,8 +108,7 @@ body.modo-claro .gustos p {
     margin: 15px 0 20px;
 }
 
-
-/* Iteración 1: degradado en la frase de presentación */
+/* Degradado en la presentación */
 .frase-presentacion {
     background: linear-gradient(90deg, var(--azul), #8bc5ff);
     background-clip: text;
@@ -114,7 +116,7 @@ body.modo-claro .gustos p {
     color: transparent;
 }
 
-/* Iteración 2: menú de navegación */
+/* Menú de navegación */
 nav {
     max-width: 900px;
     margin: 0 auto;
@@ -135,8 +137,33 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* En móvil, los enlaces del menú se colocan en columna */
+/* Pie de página */
+footer {
+    background-color: var(--superficie);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Modo claro */
+body.modo-claro {
+    --fondo: #f2f2f2;
+    --superficie: #ffffff;
+    --texto: #202020;
+    --azul: #1769aa;
+}
+
+body.modo-claro .gustos p,
+body.modo-claro .proyecto {
+    background-color: #e7e7e7;
+}
+
+/* Adaptación a móviles */
 @media (max-width: 600px) {
+    .gustos,
+    .proyectos {
+        grid-template-columns: 1fr;
+    }
+
     nav {
         flex-direction: column;
         align-items: center;
