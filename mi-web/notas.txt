@@ -1,0 +1,20 @@
+Nombre y apellidos + una frase:
+Alejandro Garrido. Soy estudiante de 1º DAM en el IES Dr. Lluís Simarro y me interesa la tecnología y la programación.
+
+Cosas que he hecho:
+- He completado el ciclo de grado medio de SMX.
+- He realizado prácticas en GSport.
+- He desarrollado proyectos web con HTML, CSS y JavaScript.
+- He trabajado con PHP y bases de datos MySQL.
+- He utilizado Git y GitHub en proyectos de clase.
+
+Cosas que me gustan:
+- La tecnología y la informática.
+- La fotografía.
+- El gimnasio y el deporte.
+
+Qué quiero ser / qué me interesa:
+Quiero seguir aprendiendo programación y desarrollar aplicaciones y proyectos propios.
+
+Colores o estilo:
+Negro, gris oscuro y azul. Estilo minimalista y tecnológico.
