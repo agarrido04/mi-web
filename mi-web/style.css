@@ -13,7 +13,7 @@
 
 body {
     margin: 0;
-    background-color: var(--fondo);
+    background-color: red;
     color: var(--texto);
     font-family: Arial, sans-serif;
     line-height: 1.6;
