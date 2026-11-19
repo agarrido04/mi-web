@@ -1,11 +1,10 @@
 /* Colores principales */
 :root {
-    --fondo: #101010;
-    --superficie: #1c1c1c;
-    --texto: #f2f2f2;
-    --azul: #2878c7;
+    --fondo: #080014;
+    --superficie: #1b1030;
+    --texto: #ffffff;
+    --azul: #b56cff;
 }
-
 /* Estilos generales */
 * {
     box-sizing: border-box;
